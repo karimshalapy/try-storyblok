@@ -12,7 +12,5 @@ async function fetchData() {
 
   const storyblokApi = getStoryblokApi();
 
-  console.log("storyblokApi", storyblokApi);
-
   return storyblokApi.get(`cdn/stories/home`, sbParams, { cache: "no-store" });
 }
